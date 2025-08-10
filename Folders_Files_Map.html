@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 45px;
+padding-top: 0px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="folders-and-files-map">Folders and Files Map</h1>
+<h2 id="ladenetst-language-development-networks-and-screen-time">LaDeNetST:
+Language Development Networks and Screen Time</h2>
+<p>This document provides the folders structure in this project. It also
+lists all the files used and produced across the workflow. Each file is
+linked to its location in the project (when using locally). Each title
+file is also hyper-linked to its file in order to ease browsing the
+project in GitHub.</p>
+<ul>
+<li><strong>root</strong>
+<ul>
+<li><a href="Folders_Files_Map.html">Folders_Files_Map.html</a></li>
+<li><a href="Folders_Files_Map.md">Folders_Files_Map.md</a></li>
+<li><a href="LaDeNetST.Rproj">LaDeNetST.Rproj</a></li>
+<li><a href="LICENSE">LICENSE</a></li>
+<li><a href="README.html">README.html</a></li>
+<li><a href="README.md">README.md</a></li>
+<li><a href="README.pdf">README.pdf</a></li>
+<li><a href="scripts_table.html">scripts_table.html</a></li>
+<li><a href="scripts_table.md">scripts_table.md</a></li>
+<li><a href="workflow_LaDeNetST.R">workflow_LaDeNetST.R</a></li>
+</ul></li>
+<li><strong>dat</strong>
+<ul>
+<li><a href="dat/a12.rds">a12.rds</a></li>
+<li><a href="dat/a12_c.rds">a12_c.rds</a></li>
+<li><a href="dat/a35.rds">a35.rds</a></li>
+<li><a href="dat/a35_c.rds">a35_c.rds</a></li>
+<li><a href="dat/boots.12.RData">boots.12.RData</a></li>
+<li><a href="dat/boots.35.RData">boots.35.RData</a></li>
+<li><a href="dat/c12.rds">c12.rds</a></li>
+<li><a href="dat/c35.rds">c35.rds</a></li>
+<li><a href="dat/clus_out.RData">clus_out.RData</a></li>
+<li><a href="dat/CS-data.RData">CS-data.RData</a></li>
+<li><a href="dat/Nets12.RData">Nets12.RData</a></li>
+<li><a href="dat/Nets35.RData">Nets35.RData</a></li>
+<li><a href="dat/nf12.csv">nf12.csv</a></li>
+<li><a href="dat/nf35.csv">nf35.csv</a></li>
+<li><a href="dat/nsch23.rds">nsch23.rds</a></li>
+<li><a href="dat/rt1.csv">rt1.csv</a></li>
+<li><a href="dat/rt1.rds">rt1.rds</a></li>
+<li><a href="dat/rt1_2.csv">rt1_2.csv</a></li>
+<li><a href="dat/sigNets12.RData">sigNets12.RData</a></li>
+<li><a href="dat/sigNets35.RData">sigNets35.RData</a></li>
+<li><a href="dat/STnets_vmap.xlsx">STnets_vmap.xlsx</a></li>
+<li><strong>cs12</strong>
+<ul>
+<li><a href="dat/cs12/cs12_090825102624.rds">cs12_090825102624.rds</a></li>
+<li><a href="dat/cs12/cs12_090825102749.rds">cs12_090825102749.rds</a></li>
+<li><a href="dat/cs12/cs12_090825110154.rds">cs12_090825110154.rds</a></li>
+<li><a href="dat/cs12/cs12_090825114023.rds">cs12_090825114023.rds</a></li>
+<li><a href="dat/cs12/cs12_090825121117.rds">cs12_090825121117.rds</a></li>
+<li><a href="dat/cs12/cs12_100825122244.rds">cs12_100825122244.rds</a></li>
+<li><a href="dat/cs12/cs12_100825131321.rds">cs12_100825131321.rds</a></li>
+</ul></li>
+<li><strong>cs35</strong>
+<ul>
+<li><a href="dat/cs35/cs35_090825131355.rds">cs35_090825131355.rds</a></li>
+<li><a href="dat/cs35/cs35_090825135758.rds">cs35_090825135758.rds</a></li>
+<li><a href="dat/cs35/cs35_090825143637.rds">cs35_090825143637.rds</a></li>
+<li><a href="dat/cs35/cs35_090825204315.rds">cs35_090825204315.rds</a></li>
+<li><a href="dat/cs35/cs35_090825211723.rds">cs35_090825211723.rds</a></li>
+<li><a href="dat/cs35/cs35_100825114626.rds">cs35_100825114626.rds</a></li>
+<li><a href="dat/cs35/cs35_100825124420.rds">cs35_100825124420.rds</a></li>
+<li><a href="dat/cs35/cs35_100825133408.rds">cs35_100825133408.rds</a></li>
+</ul></li>
+</ul></li>
+<li><strong>fig</strong>
+<ul>
+<li><a href="fig/all.pdf">all.pdf</a></li>
+<li><a href="fig/Bg.all.pdf">Bg.all.pdf</a></li>
+<li><a href="fig/Bg12.pdf">Bg12.pdf</a></li>
+<li><a href="fig/Bg35.pdf">Bg35.pdf</a></li>
+<li><a href="fig/clp12.pdf">clp12.pdf</a></li>
+<li><a href="fig/clp35.pdf">clp35.pdf</a></li>
+<li><a href="fig/cp12.pdf">cp12.pdf</a></li>
+<li><a href="fig/cp35.pdf">cp35.pdf</a></li>
+<li><a href="fig/cs12.pdf">cs12.pdf</a></li>
+<li><a href="fig/cs35.pdf">cs35.pdf</a></li>
+<li><a href="fig/edgeCI_12.pdf">edgeCI_12.pdf</a></li>
+<li><a href="fig/edgeCI_35.pdf">edgeCI_35.pdf</a></li>
+<li><a href="fig/g12.pdf">g12.pdf</a></li>
+<li><a href="fig/g35.pdf">g35.pdf</a></li>
+<li><a href="fig/sampleSize.pdf">sampleSize.pdf</a></li>
+</ul></li>
+<li><strong>fun</strong>
+<ul>
+<li><a href="fun/fc_cc.R">fc_cc.R</a></li>
+<li><a href="fun/fc_corStabSum.R">fc_corStabSum.R</a></li>
+<li><a href="fun/fc_CS.adj.R">fc_CS.adj.R</a></li>
+<li><a href="fun/fc_cs.ci.R">fc_cs.ci.R</a></li>
+<li><a href="fun/fc_df_to_tab.R">fc_df_to_tab.R</a></li>
+<li><a href="fun/fc_lang_to_col.R">fc_lang_to_col.R</a></li>
+<li><a href="fun/fc_plot.CS.R">fc_plot.CS.R</a></li>
+<li><a href="fun/fc_rfo.R">fc_rfo.R</a></li>
+<li><a href="fun/fc_rs.R">fc_rs.R</a></li>
+<li><a href="fun/fc_triangle.R">fc_triangle.R</a></li>
+<li><a href="fun/fc_vtol.R">fc_vtol.R</a></li>
+</ul></li>
+<li><strong>stx</strong>
+<ul>
+<li><a href="stx/01_SampleSize.R">01_SampleSize.R</a></li>
+<li><a href="stx/02_variables.R">02_variables.R</a></li>
+<li><a href="stx/03_recode.R">03_recode.R</a></li>
+<li><a href="stx/04_cluster.R">04_cluster.R</a></li>
+<li><a href="stx/05_tipify.R">05_tipify.R</a></li>
+<li><a href="stx/06_netEst.R">06_netEst.R</a></li>
+<li><a href="stx/07_bootNets.R">07_bootNets.R</a></li>
+<li><a href="stx/08_clinNets.R">08_clinNets.R</a></li>
+<li><a href="stx/09_plotCliNets.R">09_plotCliNets.R</a></li>
+<li><a href="stx/10_Fig_desc_Nets.R">10_Fig_desc_Nets.R</a></li>
+<li><a href="stx/11_Tab_desc_Nets.R">11_Tab_desc_Nets.R</a></li>
+<li><a href="stx/12_edgeCI.R">12_edgeCI.R</a></li>
+<li><a href="stx/13_CS.R">13_CS.R</a></li>
+<li><a href="stx/14_sampDesc.R">14_sampDesc.R</a></li>
+<li><a href="stx/15_clustDesc.R">15_clustDesc.R</a></li>
+</ul></li>
+<li><strong>tab</strong>
+<ul>
+<li><a href="tab/CenTab12.html">CenTab12.html</a></li>
+<li><a href="tab/CenTab12.md">CenTab12.md</a></li>
+<li><a href="tab/CenTab35.html">CenTab35.html</a></li>
+<li><a href="tab/CenTab35.md">CenTab35.md</a></li>
+<li><a href="tab/ClustTab12.html">ClustTab12.html</a></li>
+<li><a href="tab/ClustTab12.md">ClustTab12.md</a></li>
+<li><a href="tab/ClustTab35.html">ClustTab35.html</a></li>
+<li><a href="tab/ClustTab35.md">ClustTab35.md</a></li>
+<li><a href="tab/CS12.html">CS12.html</a></li>
+<li><a href="tab/CS12.md">CS12.md</a></li>
+<li><a href="tab/CS35.html">CS35.html</a></li>
+<li><a href="tab/CS35.md">CS35.md</a></li>
+<li><a href="tab/Table_1.html">Table_1.html</a></li>
+<li><a href="tab/Table_2.html">Table_2.html</a></li>
+<li><a href="tab/Table_3.html">Table_3.html</a></li>
+<li><a href="tab/Table_4.html">Table_4.html</a></li>
+<li><a href="tab/Table_5.html">Table_5.html</a></li>
+</ul></li>
+</ul>
+
+</body>
+</html>
