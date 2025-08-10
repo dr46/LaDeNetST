@@ -28,7 +28,7 @@ The project has five folders or directories. The **root** directory is the one c
 -   The **tab** folder contains results tables.
 -   The **fun** folder contains functions designed to run specific analysis.
 
-Here below you can find a brief description of every single file contained in the project. Files are classified considering the type of information contained in the file considering the folder structure listed above. Additionally, you can find the full list of files in the project in the file [Folders and Files Map](Folders_Files_Map.html). To have a clearer view of the workflow, it is suggested to see the [Scripts Table](scripts_table.html).
+Here below you can find a brief description of every single file contained in the project. Files are classified considering the type of information contained in the file considering the folder structure listed above. Additionally, you can find the full list of files in the project in the file [Folders and Files Map](Folders_Files_Map.md). To have a clearer view of the workflow, it is suggested to see the [Scripts Table](scripts_table.md).
  
 
 
