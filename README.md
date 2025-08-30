@@ -3,16 +3,14 @@
 
 ## Introduction
 
-This the README file for the project *LaDeNetST: Language Development Networks and Screen Time* which was created to document the paper entitled "xxx xxx xxxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx".
+This the README file for the project *LaDeNetST: Language Development Networks and Screen Time* which was created to document the paper entitled **"Dense Connectivity in Networks of Red-Flag Language Milestones Among High Screen-Time Children"**.
 
 This project has been produced to allow reproducibility and validation [(Berg, 2018)](https://doi.org/10.1126/science.aat8121). The project was also designed to promote reusability and recyclability. As shown below, we provide the R source code, figures, tables, and the necessary meta-information to enable replication and verification of our analysis. To support reproducibility when using randomly generated data or models, we have set random seeds. All the information presented here is also available in the file [README.pdf](README.pdf) and [README.html](README.html). This project is distributed under the terms of the [GNU General Public License (GPL) 3.0](LICENSE).
 
 
-
-
 Please note that this project will be uploaded and regularly updated across three different platforms: the [Open Science Framework (OSF)](https://osf.io/), [GitHub](https://github.com/) and [Zenodo](https://zenodo.org/). The following identifiers can be used to locate the project information on the aforementioned platforms:
 
--   OSF: <https://osf.io/xxxxxxxxxxxxxxxxxxxx>. The link provided is a blind link intended to support anonymous peer review. It will be replaced with a public link upon acceptance or publication of the project. A DOI will be generated once the project is made publicly available.
+-   OSF: <https://osf.io/7jyd6/?view_only=3d246e5cd90749b9bdf6db1bf69e33f7>. The link provided is a blind link intended to support anonymous peer review. It will be replaced with a public link upon acceptance or publication of the project. A DOI will be generated once the project is made publicly available.
 -   GitHub: *The repository on that platform will remain private until the project is accepted or published, in order to preserve the integrity of the blind peer-review process.*
 -   Zenodo: *The repository on that platform will remain private until the project is accepted or published, in order to preserve the integrity of the blind peer-review process.*
 
