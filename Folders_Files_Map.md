@@ -14,6 +14,7 @@ project in GitHub.
   - [Folders_Files_Map.md](Folders_Files_Map.md)
   - [LaDeNetST.Rproj](LaDeNetST.Rproj)
   - [LICENSE](LICENSE)
+  - [OSF_README.md](OSF_README.md)
   - [README.html](README.html)
   - [README.md](README.md)
   - [README.pdf](README.pdf)
