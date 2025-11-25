@@ -197,35 +197,67 @@ print(
 dev.off()
 
 # Panels --- Based on computations provided in file 16_narrative.R
+labelina12 <- c("wo2" = "Use two words together", 
+                   "wo3" = "Use three words together", 
+                   "ak1" = "Ask 'who,' 'what,' 'when,' 'where'", 
+                   "di1" = "Follow a verbal direction", 
+                   "poi" = "Point to things", 
+                   "un2" = "Understand 'in,' 'on,' and 'under'", 
+                   "di2" = "Follow 2-step directions", 
+                   "wo1" = "Say at least one word", 
+                   "tel" = "Tell a story", 
+                   "un1" = "Understand the meaning of 'no'", 
+                   "ak2" = "Ask 'why' and 'how'")
+
 cl.12.low.a <- c(2, 3, 9, 11)
 cl.12.low.b <- c(4, 5, 8, 10)
 
 bar12.low <- clp.12[[1]] + 
   theme(strip.text = element_blank()) +
-  annotate("text", x = 0.4, y = cl.12.low.a, label = "A", size = 3, col = "red") +
-  annotate("text", x = 0.4, y = cl.12.low.b, label = "B", size = 3, col = "green4") +
-  labs(title = "Screen Time < 1 hr/day, 1-2 Years") 
+  annotate("text", x = 0, y = cl.12.low.a, label = "A", size = 3, col = "red") +
+  annotate("text", x = 0, y = cl.12.low.b, label = "B", size = 3, col = "green4") +
+  labs(title = "Screen Time < 1 hr/day, 1-2 Years")  +
+  scale_y_discrete(labels = labelina12)  +  
+  coord_cartesian(xlim = c(0, 1))
 
 cl.12.hig.a <- c(2,3,5,11)
 cl.12.hig.b <- c(1, 3, 10)
 cl.12.hig.c <- c(1, 4, 6, 7, 9)
 
+de <- 0.04
+
 bar12.hig <- clp.12[[2]] + 
   theme(strip.text = element_blank()) +
-  annotate("text", x = 0.4 +0.05, y = cl.12.hig.a, label = "A", size = 3, col = "red") +
-  annotate("text", x = 0.42 +0.05, y = cl.12.hig.b, label = "B", size = 3, col = "green4") +
-  annotate("text", x = 0.4+0.05, y = cl.12.hig.c, label = "C", size = 3, col = "blue") +
-  labs(title = "Screen Time > 1 hr/day, 1-2 Years") 
+  annotate("text", x = 0, y = cl.12.hig.a, label = "A", size = 3, col = "red") +
+  annotate("text", x = 0+de, y = cl.12.hig.b, label = "B", size = 3, col = "green4") +
+  annotate("text", x = 0, y = cl.12.hig.c, label = "C", size = 3, col = "blue") +
+  labs(title = "Screen Time > 1 hr/day, 1-2 Years") +
+  scale_y_discrete(labels = labelina12)  +  
+  coord_cartesian(xlim = c(0, 1))
 
 
 cl.35.low.a <- c(9, 11, 12)
 cl.35.low.b <- c(7, 8, 10)
+labelina35low <- c("ak2" = "Ask 'why' and 'how'", 
+                   "exp" = "Explaining things seen or done", 
+                   "rbe" = "Beginning sound of words", 
+                   "sso" = "Two words starting with same sound", 
+                   "tel" = "Telling a story", 
+                   "tur" = "Waiting for turns", 
+                   "emo" = "Name emotions", 
+                   "rhy" = "Rhyming words", 
+                   "ak1" = "Ask 'who,' 'what,' 'when,' 'where'", 
+                   "cou" = "Count objects", 
+                   "wo2" = "Use two words together", 
+                   "wo3" = "Use three words together")
+
 
 bar35.low <- clp.35[[1]] + 
   theme(strip.text = element_blank()) +
   annotate("text", x = - 0.05, y = cl.35.low.a, label = "A", size = 3, col = "red") +
-  annotate("text", x = -0.05, y = cl.12.hig.b, label = "B", size = 3, col = "green4")+
-  labs(title = "Screen Time < 1 hr/day, 3-5 Years")
+  annotate("text", x = -0.05, y = cl.35.low.b, label = "B", size = 3, col = "green4")+
+  labs(title = "Screen Time < 1 hr/day, 3-5 Years") +
+  scale_y_discrete(labels = labelina35low)
 
 cl.35.hig.a <- c(17,15,7)
 cl.35.hig.b <- c(17,14,7)
@@ -235,20 +267,41 @@ cl.35.hig.e <- c(15, 7, 3)
 cl.35.hig.f <- c(17, 14, 7)
 cl.35.hig.g <- c(14, 13, 9, 7, 3)
 
+labelina35hig <- c("wo1" = "Say at least one word", 
+                   "wo2" = "Use two words together", 
+                   "ak1" = "Ask 'who,' 'what,' 'when,' 'where'", 
+                   "exp" = "Explaining things seen or done", 
+                   "rhy" = "Rhyming words", 
+                   "tel" = "Telling a story", 
+                   "poi" = "Point to things", 
+                   "emo" = "Name emotions", 
+                   "wo3" = "Use three words together", 
+                   "sso" = "Two words starting with same sound", 
+                   "cou" = "Count objects", 
+                   "rbe" = "Beginning sound of words", 
+                   "ak2" = "Ask 'why' and 'how'", 
+                   "un2" = "Understand 'in,' 'on,' and 'under'", 
+                   "di1" = "Follow a verbal direction", 
+                   "tur" = "Waiting for turns", 
+                   "di2" = "Follow 2-step directions")
+
 bar35.hig <- clp.35[[2]] + 
   theme(strip.text = element_blank()) +
-  annotate("text", x = - 0, y = cl.35.hig.a, label = "A", size = 3, col = "red") +
-  annotate("text", x = 0+0.02, y = cl.35.hig.b, label = "B", size = 3, col = "green4") +
+  annotate("text", x = 0, y = cl.35.hig.a, label = "A", size = 3, col = "red") +
+  annotate("text", x = 0+de, y = cl.35.hig.b, label = "B", size = 3, col = "green4") +
   annotate("text", x = 0, y = cl.35.hig.c, label = "C", size = 3, col = "blue") +
-  annotate("text", x = 0+0.02, y = cl.35.hig.d, label = "D", size = 3, col = "grey50") +
-  annotate("text", x = 0+0.04, y = cl.35.hig.e, label = "E", size = 3, col = "black") +
-  annotate("text", x = 0+0.06, y = cl.35.hig.e, label = "F", size = 3, col = "violetred") +
-  annotate("text", x = 0+0.08, y = cl.35.hig.e, label = "G", size = 3, col = "olivedrab4") +
-  labs(title = "Screen Time > 1 hr/day, 3-5 Years")
+  annotate("text", x = 0+de, y = cl.35.hig.d, label = "D", size = 3, col = "grey50") +
+  annotate("text", x = 0+de*2, y = cl.35.hig.e, label = "E", size = 3, col = "black") +
+  annotate("text", x = 0+de*3, y = cl.35.hig.e, label = "F", size = 3, col = "violetred") +
+  annotate("text", x = 0+de*4, y = cl.35.hig.e, label = "G", size = 3, col = "olivedrab4") +
+  labs(title = "Screen Time > 1 hr/day, 3-5 Years") +
+  scale_y_discrete(labels = labelina35hig) +  
+  coord_cartesian(xlim = c(0, 1))
 
-png("fig/barrat.png", width = 20, height = 20, units = "cm", res = 600)
-(bar12.low + bar12.hig) / (bar35.low + bar35.hig)
+png("fig/barrat.png", width = 30, height = 20, units = "cm", res = 900)
+print((bar12.low + bar12.hig) / (bar35.low + bar35.hig))
 dev.off()
+
 
 detach("package:qgraph", unload = TRUE)
 detach("package:ggplot2", unload = TRUE)

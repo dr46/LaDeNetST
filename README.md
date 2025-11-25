@@ -1,9 +1,14 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 'LaDeNetST: Language Development Networks and Screen Time'
 ================
 
 ## Introduction
 
-This the README file for the project *LaDeNetST: Language Development Networks and Screen Time* which was created to document the paper entitled **"Dense Connectivity in Networks of Red-Flag Language Milestones Among High Screen-Time Children"**. The manuscript was prepared for submission and subsequently submitted to [*Child Development*](https://srcd.onlinelibrary.wiley.com/journal/14678624) journal in September 2025.
+This the README file for the project *LaDeNetST: Language Development Networks and Screen Time* which was created to document the paper entitled **"Dense Connectivity in Networks of Red-Flag Language Milestones Among High Screen-Time Children"**. The manuscript was prepared for submission and subsequently submitted to [*Frontiers in Psychology*](https://www.frontiersin.org/journals/psychology) journal in November 2025.
 
 This project has been produced to allow reproducibility and validation [(Berg, 2018)](https://doi.org/10.1126/science.aat8121). The project was also designed to promote reusability and recyclability. As shown below, we provide the R source code, figures, tables, and the necessary meta-information to enable replication and verification of our analysis. To support reproducibility when using randomly generated data or models, we have set random seeds. All the information presented here is also available in the file [README.pdf](README.pdf) and [README.html](README.html). This project is distributed under the terms of the [GNU General Public License (GPL) 3.0](LICENSE).
 
@@ -57,7 +62,7 @@ Several R packages are used to perform the data analysis. These packages are loa
 
 ## Data Files
 
-### Language Development variables 
+### Language Development Variables 
 [a12.rds](dat/a12.rds) and [a35.rds](dat/a35.rds)
 
 These files include an identification column (*id*) along with the language variables analyzed for children aged 1–2 ([a12.rds](dat/a12.rds)) and 3–5 ([a35.rds](dat/a35.rds)). Binary variables are coded to indicate whether a child experiences difficulty (value = 1) in achieving the linguistic milestone represented by the item. Ordinal variables are coded to reflect the degree of difficulty a child faces in reaching the milestone, with higher values indicating greater challenges. Further details about the coding scheme can be found in the file [STnets_vmap.xlsx](dat/STnets_vmap.xlsx).
@@ -66,7 +71,7 @@ These files include an identification column (*id*) along with the language vari
 ### Standardized Language Assessment Items 
 [a12_c.rds](dat/a12_c.rds) and [a35_c.rds](dat/a35_c.rds)
 
-These files contain standardized language assessment items, stratified by age, sex, and caregivers' education level. File [a12_c.rds](dat/a12_c.rds) corresponds to children aged 1–2, while file [a35_c.rds](dat/a35_c.rds) corresponds to children aged 3–5. Each file also includes a unique child identifier (*id* column) and a classification variable (*c12* column) that groups children based on the degree of screen time reported.
+These files contain standardized language assessment items, stratified by age, sex, and caregivers' education level. File [a12_c.rds](dat/a12_c.rds) corresponds to children aged 1–2, while file [a35_c.rds](dat/a35_c.rds) corresponds to children aged 3–5. Each file also includes a unique child identifier (*id* column) and a classification variable (*c12* and *c35* columns) that groups children based on the degree of screen time reported.
 
 
 ### Initial Bootstrapped Networks 
@@ -80,7 +85,7 @@ These files contain the bootstrapped initial network estimates for children aged
 These files are two-column data frames containing:
 
 - *id*: A unique identifier for each child in the sample.
-- *group*: A categorical variable indicating the sample partition based on age and screen time.
+- *c12* or *c35*: A categorical variable indicating the sample partition based on screen time.
 
 The partitions are defined as follows:
 
@@ -168,7 +173,8 @@ These files contain the final dataset analyzed in this study:
 
 - Sample size: 16,914 observations
 - Number of variables: 38
-The dataset was derived from the T1 form (designed for children aged 0–5 years) within the [nsch23.rds](dat/nsch23.rds)s file. However, children aged 0 years were excluded to focus on the target age range.
+The dataset was derived from the T1 form (designed for children aged 0–5 years) within the [nsch23.rds](dat/nsch23.rds) file. However, children aged 0 years were excluded to focus on the target age range.
+
 
 To facilitate data sharing and visualization on platforms like OSF, the dataset is provided in three formats:
 
@@ -206,7 +212,8 @@ Each file includes four lists, and each list is a two-element list corresponding
 
 The suffix "12" refers to children aged 1–2 years, and "35" refers to children aged 3–5 years.
 
-Contents:
+#### Contents:
+
 - *am12* / *am35*: Adjacency matrices for each significant network.
 
 - *bs12* / *bs35*: Bootstrap summaries computed from the preliminary network estimations (see [boots.12.RData](dat/boots.12.RData) and [boots.35.RData](dat/boots.35.RData)).
@@ -663,7 +670,8 @@ These PDF files present clustering plots for networks estimated for children age
 These PDF files present centrality plots for networks estimated for children aged 1–2 years and 3–5 years, allowing for comparison across screen time exposure groups.
 
 #### File Details:
--[cp12.pdf](fig/cp12.pdf) and [cp35.pdf](fig/cp35.pdf): Each file contains one plot per page, with each plot representing centrality statistics for a specific network within the respective age group.
+
+- [cp12.pdf](fig/cp12.pdf) and [cp35.pdf](fig/cp35.pdf): Each file contains one plot per page, with each plot representing centrality statistics for a specific network within the respective age group.
 
 - [cp12_all.pdf](fig/cp12_all.pdf) and [cp35_all.pdf](fig/cp35_all.pdf): These files provide combined plots, where centrality statistics for all clusters within the age group are displayed in a single figure for easier comparison.
 
@@ -766,7 +774,7 @@ Each table includes the following components:
 - Node label: Indicates the variable or item represented as a node in the network.
 - Clustering coefficient: Calculated using the method proposed by [Barrat et al. (2004)](https://doi.org/10.1073/pnas.0400087101), which is suitable for undirected and weighted graphs.
 
-These coefficients provide insight into the local connectivity of nodes, reflecting the tendency of a node’s neighbors to form tightly knit groups.
+These coefficients provide insight into the local connectivity of nodes, reflecting the tendency of a node’s neighbours to form tightly knit groups.
 
 ### Edge Comparison Between Screen Time Groups
 #### [comp-edges12.html](tab/comp-edges12.html), [comp-edges12.md](tab/comp-edges12.md), [comp-edges35.html](tab/comp-edges35.html) and [comp-edges35.md](tab/comp-edges35.md)

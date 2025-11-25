@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This the README file for the project *LaDeNetST: Language Development Networks and Screen Time* which was created to document the paper entitled **"Dense Connectivity in Networks of Red-Flag Language Milestones Among High Screen-Time Children"**. The manuscript was prepared for submission and subsequently submitted to [*Child Development*](https://srcd.onlinelibrary.wiley.com/journal/14678624) journal in September 2025.
+This the README file for the project *LaDeNetST: Language Development Networks and Screen Time* which was created to document the paper entitled **"Dense Connectivity in Networks of Red-Flag Language Milestones Among High Screen-Time Children"**. The manuscript was prepared for submission and subsequently submitted to [*Frontiers in Psychology*](https://www.frontiersin.org/journals/psychology) journal in November 2025.
 
 
 ## Purpose

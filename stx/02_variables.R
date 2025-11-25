@@ -36,7 +36,7 @@ rt1 <- t1[, c("id", # Case identification
   "SCREENTIME", "SC_AGE_YEARS", "A1_GRADE", "A2_GRADE", "A1_MENTHEALTH",
   "A2_MENTHEALTH", "AGEPOS4", "SC_SEX", "K6Q60_R", "K6Q61_R", 
   "OUTDOORSWKDAY","OUTDOORSWKEND", "TOTKIDS_R", "A1_EMPLOYED_R", 
-  "A2_EMPLOYED_R", "HOUSE_GEN")]
+  "A2_EMPLOYED_R", "HOUSE_GEN", "SC_RACE_R")]
 
 names(rt1) <- c("id", # Case identification
   # Language variables
@@ -46,7 +46,7 @@ names(rt1) <- c("id", # Case identification
   # Aditional variables
   "st", "age", "gr1", "gr2", "mh1", "mh2",
   "bor", "sex", "rtc", "ssc", "owp", "onp", "nch", "em1",
-  "em2", "pan")
+  "em2", "pan", "rac")
 
 # Deleting T1 form database
 rm(t1)

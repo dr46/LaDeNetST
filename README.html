@@ -360,8 +360,8 @@ display: none;
 Development Networks and Screen Time</em> which was created to document
 the paper entitled <strong>“Dense Connectivity in Networks of Red-Flag
 Language Milestones Among High Screen-Time Children”</strong>. The
-manuscript was prepared for submission and subsequently submitted to <a href="https://srcd.onlinelibrary.wiley.com/journal/14678624"><em>Child
-Development</em></a> journal in September 2025.</p>
+manuscript was prepared for submission and subsequently submitted to <a href="https://www.frontiersin.org/journals/psychology"><em>Frontiers in
+Psychology</em></a> journal in November 2025.</p>
 <p>This project has been produced to allow reproducibility and
 validation <a href="https://doi.org/10.1126/science.aat8121">(Berg,
 2018)</a>. The project was also designed to promote reusability and
@@ -496,7 +496,7 @@ corresponding file (<a href="scripts_table.html">scripts_table.html</a>).</p>
 <div id="data-files" class="section level2">
 <h2>Data Files</h2>
 <div id="language-development-variables" class="section level3">
-<h3>Language Development variables</h3>
+<h3>Language Development Variables</h3>
 <p><a href="dat/a12.rds">a12.rds</a> and <a href="dat/a35.rds">a35.rds</a></p>
 <p>These files include an identification column (<em>id</em>) along with
 the language variables analyzed for children aged 1–2 (<a href="dat/a12.rds">a12.rds</a>) and 3–5 (<a href="dat/a35.rds">a35.rds</a>). Binary variables are coded to indicate
@@ -513,8 +513,9 @@ details about the coding scheme can be found in the file <a href="dat/STnets_vma
 stratified by age, sex, and caregivers’ education level. File <a href="dat/a12_c.rds">a12_c.rds</a> corresponds to children aged 1–2,
 while file <a href="dat/a35_c.rds">a35_c.rds</a> corresponds to children
 aged 3–5. Each file also includes a unique child identifier (<em>id</em>
-column) and a classification variable (<em>c12</em> column) that groups
-children based on the degree of screen time reported.</p>
+column) and a classification variable (<em>c12</em> and <em>c35</em>
+columns) that groups children based on the degree of screen time
+reported.</p>
 </div>
 <div id="initial-bootstrapped-networks" class="section level3">
 <h3>Initial Bootstrapped Networks</h3>
@@ -535,8 +536,8 @@ simulation.</p>
 <p>These files are two-column data frames containing:</p>
 <ul>
 <li><em>id</em>: A unique identifier for each child in the sample.</li>
-<li><em>group</em>: A categorical variable indicating the sample
-partition based on age and screen time.</li>
+<li><em>c12</em> or <em>c35</em>: A categorical variable indicating the
+sample partition based on screen time.</li>
 </ul>
 <p>The partitions are defined as follows:</p>
 <ul>
@@ -677,7 +678,7 @@ and <a href="dat/rt1_2.csv">rt1_2.csv</a></p>
 <ul>
 <li>Sample size: 16,914 observations</li>
 <li>Number of variables: 38 The dataset was derived from the T1 form
-(designed for children aged 0–5 years) within the <a href="dat/nsch23.rds">nsch23.rds</a>s file. However, children aged 0
+(designed for children aged 0–5 years) within the <a href="dat/nsch23.rds">nsch23.rds</a> file. However, children aged 0
 years were excluded to focus on the target age range.</li>
 </ul>
 <p>To facilitate data sharing and visualization on platforms like OSF,
@@ -732,9 +733,11 @@ corresponding to:</p>
 </ul>
 <p>The suffix “12” refers to children aged 1–2 years, and “35” refers to
 children aged 3–5 years.</p>
-<p>Contents: - <em>am12</em> / <em>am35</em>: Adjacency matrices for
-each significant network.</p>
+<div id="contents-1" class="section level4">
+<h4>Contents:</h4>
 <ul>
+<li><p><em>am12</em> / <em>am35</em>: Adjacency matrices for each
+significant network.</p></li>
 <li><p><em>bs12</em> / <em>bs35</em>: Bootstrap summaries computed from
 the preliminary network estimations (see <a href="dat/boots.12.RData">boots.12.RData</a> and <a href="dat/boots.35.RData">boots.35.RData</a>).</p></li>
 <li><p><em>nod12</em> / <em>nod35</em>: Character vectors listing the
@@ -747,6 +750,7 @@ do not include zero.</p></li>
 <p>These files represent the final network structures used in the
 analysis and visualization of language development patterns across
 screen time exposure groups.</p>
+</div>
 </div>
 <div id="variable-coding-file" class="section level3">
 <h3>Variable Coding File</h3>
@@ -850,7 +854,7 @@ of data processing and analysis within the project.</p>
 <p>These folders contain manually generated files used to test
 centrality stability in network models for children aged 1–2 years
 (cs12) and 3–5 years (cs35).</p>
-<div id="contents-1" class="section level4">
+<div id="contents-2" class="section level4">
 <h4>Contents:</h4>
 <ul>
 <li><p>Each folder includes 10 .rds files, created using the custom
@@ -1419,13 +1423,13 @@ children aged 1–2 years and 3–5 years, allowing for comparison across
 screen time exposure groups.</p>
 <div id="file-details-1" class="section level4">
 <h4>File Details:</h4>
-<p>-<a href="fig/cp12.pdf">cp12.pdf</a> and <a href="fig/cp35.pdf">cp35.pdf</a>: Each file contains one plot per page,
-with each plot representing centrality statistics for a specific network
-within the respective age group.</p>
 <ul>
-<li><a href="fig/cp12_all.pdf">cp12_all.pdf</a> and <a href="fig/cp35_all.pdf">cp35_all.pdf</a>: These files provide combined
+<li><p><a href="fig/cp12.pdf">cp12.pdf</a> and <a href="fig/cp35.pdf">cp35.pdf</a>: Each file contains one plot per page,
+with each plot representing centrality statistics for a specific network
+within the respective age group.</p></li>
+<li><p><a href="fig/cp12_all.pdf">cp12_all.pdf</a> and <a href="fig/cp35_all.pdf">cp35_all.pdf</a>: These files provide combined
 plots, where centrality statistics for all clusters within the age group
-are displayed in a single figure for easier comparison.</li>
+are displayed in a single figure for easier comparison.</p></li>
 </ul>
 </div>
 <div id="centrality-measures" class="section level4">
@@ -1570,7 +1574,7 @@ the network.</li>
 which is suitable for undirected and weighted graphs.</li>
 </ul>
 <p>These coefficients provide insight into the local connectivity of
-nodes, reflecting the tendency of a node’s neighbors to form tightly
+nodes, reflecting the tendency of a node’s neighbours to form tightly
 knit groups.</p>
 </div>
 </div>
