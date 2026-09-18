@@ -1,14 +1,14 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 'LaDeNetST: Language Development Networks and Screen Time'
 ================
 
 ## Introduction
 
-This the README file for the project *LaDeNetST: Language Development Networks and Screen Time* which was created to document the paper entitled **"Dense Connectivity in Networks of Red-Flag Language Milestones Among High Screen-Time Children"**. The manuscript was prepared for submission and subsequently submitted to [*Frontiers in Psychology*](https://www.frontiersin.org/journals/psychology) journal in November 2025.
+This the README file for the project *LaDeNetST: Language Development Networks and Screen Time* which was created to document the paper entitled **"Dense Connectivity in Networks of Red-Flag Language Milestones Among High Screen-Time Children"**. The manuscript was prepared for submission and subsequently submitted to [*Frontiers in Psychology*](https://www.frontiersin.org/journals/psychology) journal in November 2025. The article was accepted on September the 15th, 2026.
 
 This project has been produced to allow reproducibility and validation [(Berg, 2018)](https://doi.org/10.1126/science.aat8121). The project was also designed to promote reusability and recyclability. As shown below, we provide the R source code, figures, tables, and the necessary meta-information to enable replication and verification of our analysis. To support reproducibility when using randomly generated data or models, we have set random seeds. All the information presented here is also available in the file [README.pdf](README.pdf) and [README.html](README.html). This project is distributed under the terms of the [GNU General Public License (GPL) 3.0](LICENSE).
 
