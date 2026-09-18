@@ -15,7 +15,7 @@ This project has been produced to allow reproducibility and validation [(Berg, 2
 
 Please note that this project will be uploaded and regularly updated across three different platforms: the [Open Science Framework (OSF)](https://osf.io/), [GitHub](https://github.com/) and [Zenodo](https://zenodo.org/). The following identifiers can be used to locate the project information on the aforementioned platforms:
 
--   OSF: <https://osf.io/7jyd6/?view_only=3d246e5cd90749b9bdf6db1bf69e33f7>. The link provided is a blind link intended to support anonymous peer review. It will be replaced with a public link upon acceptance or publication of the project. A DOI will be generated once the project is made publicly available.
+-   OSF: webpage: <https://osf.io/7jyd6>, Project DOI: <https://doi.org/10.17605/OSF.IO/7JYD6>. 
 -   GitHub: *The repository on that platform will remain private until the project is accepted or published, in order to preserve the integrity of the blind peer-review process.*
 -   Zenodo: *The repository on that platform will remain private until the project is accepted or published, in order to preserve the integrity of the blind peer-review process.*
 
