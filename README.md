@@ -15,8 +15,8 @@ This project has been produced to allow reproducibility and validation [(Berg, 2
 
 Please note that this project will be uploaded and regularly updated across three different platforms: the [Open Science Framework (OSF)](https://osf.io/), [GitHub](https://github.com/) and [Zenodo](https://zenodo.org/). The following identifiers can be used to locate the project information on the aforementioned platforms:
 
--   OSF: webpage: <https://osf.io/7jyd6>, Project DOI: <https://doi.org/10.17605/OSF.IO/7JYD6>. 
--   GitHub: *The repository on that platform will remain private until the project is accepted or published, in order to preserve the integrity of the blind peer-review process.*
+-   OSF: <https://osf.io/7jyd6>, Project DOI: <https://doi.org/10.17605/OSF.IO/7JYD6>. 
+-   GitHub: <https://github.com/dr46/LaDeNetST>
 -   Zenodo: *The repository on that platform will remain private until the project is accepted or published, in order to preserve the integrity of the blind peer-review process.*
 
 **Warning!** The file links are configured to function correctly within the GitHub repository environment or after downloading the entire project and opening it locally. Consequently, none of the links will work within the [README.pdf](README.pdf) or [README.html](README.html) when open in the OSF website.
